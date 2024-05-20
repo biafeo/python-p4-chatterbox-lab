@@ -52,7 +52,7 @@ def messages_by_id(id):
         }
         response = make_response(response_body, 404)
         return response
-    
+    #GET request for url with ID
     else:
         if request.method == 'GET':
             message_dict = message.to_dict()
